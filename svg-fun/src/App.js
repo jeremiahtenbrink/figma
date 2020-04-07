@@ -3,45 +3,64 @@ import logo from "./logo.svg";
 import styled from "styled-components";
 import "./App.css";
 import { ReactComponent as Mask } from "./svgs/Mask Group.svg";
+import { ReactComponent as Background } from "./svgs/Group.svg";
 
 function App(){
   return ( <div className="App">
+    <AppBackground/>
     <header className="App-header">
-      
-      <WithKeyframes/>
-      
-      
-      <p>
-        Edit <code>src/App.js</code> and save to reload.
-      </p>
-      <a
-        className="App-link"
-        href="https://reactjs.org"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Learn React
-      </a>
+      <FadedBackground>
+        <WithKeyframes/>
+        <p>
+          Fun with SVG's!!!
+        </p>
+        <a
+          className="App-link"
+          href="www.tenbrink.dev"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Check Out My Portfolio
+        </a>
+      </FadedBackground>
     </header>
+    <a href="https://www.freepik.com/free-photos-vectors/background">Background
+      vector created by starline - www.freepik.com</a>
   </div> );
 }
+
+const FadedBackground = styled.div`
+width: 60%;
+height: 100%;
+min-height: 300px;
+background-color: rgba(255, 255, 255, .9);
+`;
+
+const AppBackground = styled( Background )`
+position: fixed;
+z-index: -5;
+left: -200px;
+top: -100px;
+width: 150%;
+height: 150%;
+`;
 
 const WithKeyframes = styled( Mask )`
 && {
   #WritePath {
-    stroke: green;
+    stroke: #a8a8a8;
     fill: transparent;
-    animation: dash 20s forwards;
+    animation: dash 10s reverse;
     }
     
     @keyframes dash {
     0% {
       stroke-dasharray: 4000px, 4000px;
-      stroke-dashoffset: 4000px;
+      stroke-dashoffset: 0;
     }
     100% {
       stroke-dasharray: 4000px, 4000px;
-      stroke-dashoffset: 0%;
+      stroke-dashoffset: 4000px;
     }
   }
 }
