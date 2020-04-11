@@ -7,7 +7,7 @@ import { ReactComponent as Background } from "./svgs/Group.svg";
 
 function App(){
   return ( <div className="App">
-    <AppBackground/>
+    
     <header className="App-header">
       <FadedBackground>
         <WithKeyframes/>
