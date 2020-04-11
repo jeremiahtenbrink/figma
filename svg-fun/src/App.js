@@ -4,6 +4,8 @@ import styled from "styled-components";
 import "./App.css";
 import { ReactComponent as Mask } from "./svgs/Mask Group.svg";
 import { ReactComponent as Background } from "./svgs/Group.svg";
+import { Route } from "react-router-dom";
+import IconsOnPath from "./views/IconsOnPath.js";
 
 function App(){
   return ( <div className="App">
@@ -25,7 +27,9 @@ function App(){
       </FadedBackground>
     </header>
     <a href="https://www.freepik.com/free-photos-vectors/background">Background
-      vector created by starline - www.freepik.com</a>
+      vector created by starline - www.freepik.com
+    </a>
+    <Route path={ "/icons-along-path" } component={ IconsOnPath }/>
   </div> );
 }
 
