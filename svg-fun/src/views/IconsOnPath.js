@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { ReactComponent as SVG } from "../svgs/IconSidePaths.svg";
-import { ReactComponent as SvgText } from "../svgs/Ellipse3.svg";
 import { gsap } from "gsap";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 
@@ -69,7 +68,6 @@ const IconsOnPath = ( props ) => {
   }, [ icons ] );
   
   return ( <Container>
-    <SvgText/>
     <SVG/>
   </Container> );
 };
