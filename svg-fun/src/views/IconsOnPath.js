@@ -37,7 +37,6 @@ const IconsOnPath = ( props ) => {
   }, [] );
   
   useEffect( () => {
-    debugger;
     if( icons.southIcons.length === 0 || icons.northIcons.length === 0 ){
       return;
     }
