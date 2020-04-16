@@ -1,0 +1,10 @@
+<svg viewBox="0 0 174 87">
+<path id="path" fill="transparent"
+      d="M1.11096 86.1235C1.40107 38.8425 39.5055 0.795461 86.7869 0.576619C134.287 0.356764 172.964 38.6164 173.26 86.116"
+      stroke="black"/>
+<text width="174">
+    <textPath startOffset="100" side="left" xlink:href="#path">
+        LambdaSchool
+    </textPath>
+</text>
+</svg>

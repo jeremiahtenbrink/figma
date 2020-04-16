@@ -1,0 +1,14 @@
+<svg viewBox="0 0 174 87" width="429" height="311">
+    <path id="path" fill="transparent" d="M1.11096 86.1235C1.40107 38.8425 39.5055 0.795461 86.7869
+0.576619C134.287 0.356764 172.964 38.6164 173.26 86.116" stroke="transparent"/>
+
+    <style>
+        .path-text {fontSize: 34}
+    </style>
+
+    <text class="path-text" textLength="685">
+        <textPath startOffset="19" xlinkHref="#path">
+            Lambda School
+        </textPath>
+    </text>
+</svg>
