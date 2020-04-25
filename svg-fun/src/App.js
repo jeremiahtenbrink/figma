@@ -7,6 +7,7 @@ import TextPathView from "./views/TextPathView.js";
 import Icons from "./views/Icons.js";
 import Helo from "./views/Helo.js";
 import { ReactComponent as JeremiahHelo } from "./svgs/JeremiahHelo.svg";
+import Morph from "./views/Morph.js";
 
 function App(){
   return ( <div className="App">
@@ -15,6 +16,7 @@ function App(){
       <Route path={ "/text-path" } component={ TextPathView }/>
       <Route path={ "/icons" } component={ Icons }/>
       <Route path={ "/helo" } render={ () => <Helo><JeremiahHelo/></Helo> }/>
+      <Route exact path={ "/morph" } component={ Morph }/>
       <Route exact path={ "/" } component={ LandingPage }/>
     
     </Switch>
